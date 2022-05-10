@@ -1,0 +1,55 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+    <title>First Motors </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="/static/image/png" href="/static/img/logo.png">
+    <link rel="stylesheet" href="/static/css/_bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/_bootstrap-rtl.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+      <link rel="stylesheet" href="/static/css/style-en.css">
+    <link rel="stylesheet" href="{% static 'css/_hover-min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+
+</head>
+<body>
+{% include 'header.html'%}
+<section class="web web-main">
+    {% block content %}
+
+    {% endblock %}
+</section>
+{% include 'footer.html'%}
+
+</body>
+<script src="{% static 'js/jquery-3.3.1.min.js'%}"></script>
+<script src="{% static 'js/bootstrap.min.js'%}"></script>
+<script src="{% static 'js/jquery.nicescroll.min.js'%}"></script>
+<script src="{% static 'js/html5shiv.js'%}"></script>
+<script src="{% static 'js/main.js'%}"></script>
+<script src="{% static 'js/wow.js'%}"></script>
+<script type="text/javascript">
+    window.addEventListener('load', (event) => {
+            var loading = document.querySelector('.web .loading');
+            setTimeout(function(){
+                loading.style.opacity = "0";
+                loading.style.transition = "all 0.2s ease-in";
+                setTimeout(function(){
+                    loading.style.display = "none";
+                },200);
+            },200);
+        });
+
+
+
+
+
+
+
+</script>
+<script src="{% static 'js/backend.js1' %}"></script>
+</html>

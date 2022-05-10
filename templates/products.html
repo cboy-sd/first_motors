@@ -1,0 +1,211 @@
+{% extends 'base.html'%}
+{%  load static %}
+{% block content%}
+<section class="product">
+    <div class="container">
+        <div class="row">
+            <!-- Search -->
+            <div class="search">
+                <form>
+                    <input type="text" placeholder="ما الخدمة التي تبحث عنة؟">
+                    <button><img src="/static/img/search.png"></button>
+                </form>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="navTab">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                               aria-controls="home" aria-selected="true">جرافـات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                               aria-controls="profile" aria-selected="false">لوادر</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                               aria-controls="contact" aria-selected="false">طواحيـن</a>
+                        </li>
+                    </ul>
+                    <div class="iteem">
+                        <ul>
+                            <li class="active"><a href="#">
+                                <svg id="order" xmlns="http://www.w3.org/2000/svg" width="28.713" height="28.9"
+                                     viewBox="0 0 28.713 28.9">
+                                    <path id="Path_37167" data-name="Path 37167"
+                                          d="M157.055,21.059a.588.588,0,0,0-.832,0l-5.833,5.833V.588a.588.588,0,0,0-1.176,0v26.3l-5.833-5.833a.588.588,0,0,0-.832.832l6.837,6.837a.588.588,0,0,0,.832,0l6.837-6.837A.588.588,0,0,0,157.055,21.059Z"
+                                          transform="translate(-128.515)" fill="#444343"/>
+                                    <path id="Path_37168" data-name="Path 37168"
+                                          d="M1.544,1.176H19.2A.588.588,0,1,0,19.2,0H1.544a.588.588,0,0,0,0,1.176Z"
+                                          transform="translate(-0.956)" fill="#444343"/>
+                                    <path id="Path_37169" data-name="Path 37169"
+                                          d="M1.544,71.4H19.2a.588.588,0,1,0,0-1.176H1.544a.588.588,0,1,0,0,1.176Z"
+                                          transform="translate(-0.956 -63.344)" fill="#444343"/>
+                                    <path id="Path_37170" data-name="Path 37170"
+                                          d="M1.544,141.632H19.2a.588.588,0,1,0,0-1.176H1.544a.588.588,0,1,0,0,1.176Z"
+                                          transform="translate(-0.956 -126.689)" fill="#444343"/>
+                                    <path id="Path_37171" data-name="Path 37171"
+                                          d="M13.06,210.685H1.544a.588.588,0,1,0,0,1.176H13.06a.588.588,0,1,0,0-1.176Z"
+                                          transform="translate(-0.956 -190.034)" fill="#444343"/>
+                                    <path id="Path_37172" data-name="Path 37172"
+                                          d="M13.06,280.912H1.544a.588.588,0,0,0,0,1.176H13.06a.588.588,0,0,0,0-1.176Z"
+                                          transform="translate(-0.956 -253.377)" fill="#444343"/>
+                                </svg>
+                            </a></li>
+                            <li><a href="#">
+                                <svg id="order" xmlns="http://www.w3.org/2000/svg" width="28.713" height="28.9"
+                                     viewBox="0 0 28.713 28.9">
+                                    <path id="Path_37167" data-name="Path 37167"
+                                          d="M157.055,7.841a.588.588,0,0,1-.832,0L150.39,2.008v26.3a.588.588,0,0,1-1.176,0V2.008l-5.833,5.833a.588.588,0,0,1-.832-.832L149.386.172a.588.588,0,0,1,.832,0l6.837,6.837A.588.588,0,0,1,157.055,7.841Z"
+                                          transform="translate(-128.515)" fill="#444343"/>
+                                    <path id="Path_37168" data-name="Path 37168"
+                                          d="M1.544,0H19.2a.588.588,0,0,1,0,1.176H1.544A.588.588,0,0,1,1.544,0Z"
+                                          transform="translate(-0.956 27.724)" fill="#444343"/>
+                                    <path id="Path_37169" data-name="Path 37169"
+                                          d="M1.544,70.228H19.2a.588.588,0,0,1,0,1.176H1.544a.588.588,0,1,1,0-1.176Z"
+                                          transform="translate(-0.956 -49.388)" fill="#444343"/>
+                                    <path id="Path_37170" data-name="Path 37170"
+                                          d="M1.544,140.456H19.2a.588.588,0,0,1,0,1.176H1.544a.588.588,0,1,1,0-1.176Z"
+                                          transform="translate(-0.956 -126.5)" fill="#444343"/>
+                                    <path id="Path_37171" data-name="Path 37171"
+                                          d="M13.06,211.861H1.544a.588.588,0,1,1,0-1.176H13.06a.588.588,0,1,1,0,1.176Z"
+                                          transform="translate(-0.956 -203.612)" fill="#444343"/>
+                                    <path id="Path_37172" data-name="Path 37172"
+                                          d="M13.06,282.088H1.544a.588.588,0,0,1,0-1.176H13.06a.588.588,0,0,1,0,1.176Z"
+                                          transform="translate(-0.956 -280.723)" fill="#444343"/>
+                                </svg>
+                            </a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <!--tab content-->
+                <div class="tab-content">
+                    <div class="row">
+                        {% for product in products %}
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                            <div class="addprod">
+                                <svg enable-background="new 0 0 338.99 245.34" version="1.1"
+                                     viewBox="0 0 338.99 245.34" xml:space="preserve"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                            <style type="text/css">
+                                                .st0{fill:#EDEBE9;}
+                                                .st1{fill:#D8D3CE;}
+                                                .st2{fill:none;}
+                                                .st3{fill:url(#b);}
+                                                .st4{fill:url(#a);}
+                                                .st5{fill:#444343;}
+                                            </style>
+
+                                    <rect class="st0" x="66.22" y="789.86" width="142.13" height="1"/>
+                                    <rect class="st0" x="218.9" y="789.86" width="8.85" height="1"/>
+                                    <path class="st0"
+                                          d="m237.58 790.86v-1c14.15-0.02 25.62-11.48 25.63-25.63v-10.86c-0.02-6.11 2.41-11.98 6.75-16.29l7.34-7.34c1.53-1.47 3.95-1.47 5.49 0 1.12 1.12 2.95 1.12 4.07 0l2.77-2.77c0.46-0.46 0.46-1.21 0-1.67s-1.21-0.46-1.67 0l-0.99 0.99c-1.32 1.43-3.55 1.52-4.97 0.2-1.43-1.32-1.52-3.55-0.2-4.97 0.06-0.07 0.13-0.14 0.2-0.2l6.65-6.65 0.71 0.71-6.65 6.65c-0.96 1.01-0.93 2.6 0.07 3.56 0.98 0.94 2.51 0.94 3.49 0l0.99-0.99c0.86-0.84 2.25-0.82 3.09 0.04 0.82 0.85 0.82 2.2 0 3.04l-2.77 2.77c-1.52 1.51-3.97 1.51-5.49 0-1.14-1.09-2.93-1.09-4.07 0l-7.34 7.34c-4.15 4.12-6.47 9.73-6.45 15.58v10.86c-0.04 14.7-11.95 26.61-26.65 26.63z"/>
+
+
+                                    <path class="st1"
+                                          d="m291.8 169.9v-105.17l43.63-29.08-0.02-0.03-64.07 41.64-36.16-7.36 58.73-38.86 0.14-0.09c5.8-3.84 1.89-12.92-4.92-11.56l-275.69 54.91c-7.69 1.48-13.29 8.13-13.44 15.95v155.09h337.97c-0.57-19.32-8.47-37.74-22.17-51.44l-24-24z"/>
+                                    <path class="st2" d="m337.93 33.99-2.51 1.63 0.01 0.03 2.5-1.66z"/>
+
+                                    <linearGradient id="b" x1="-995.92" x2="-995.92" y1="1889.7" y2="1888.7"
+                                                    gradientTransform="matrix(83.642 0 0 -51.19 83592 96753)"
+                                                    gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#FC544C" offset="0"/>
+                                        <stop stop-color="#F03755" offset="1"/>
+                                                </linearGradient>
+                                    <path class="st3"
+                                          d="m249.39 63.51 30.18 6.14 53.47-34.75c-2.86-6.68-8.37-12.41-15.57-16.44l-68.08 45.05z"/>
+
+                                    <linearGradient id="a" x1="-1003.8" x2="-1003.8" y1="1889.1" y2="1888.1"
+                                                    gradientTransform="matrix(41.4 0 0 -161.62 41875 305352)"
+                                                    gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#FC544C" offset="0"/>
+                                        <stop stop-color="#F03755" offset="1"/>
+                                                </linearGradient>
+                                    <path class="st4"
+                                          d="m336.66 40.01-39.07 26.04v94.18l41.4 41.4v-150.42c-0.01-3.85-0.8-7.66-2.33-11.2z"/>
+                                    <path class="st5"
+                                          d="m287.27 0h-0.33l-58.43 9.29c-21.83 0-40.46 10.65-47.77 25.63l107.75-23.64c6.57-1.44 5.67-11.25-1.05-11.28h-0.17z"/>
+                                    <path class="st2" d="m335.43 35.66 2.5-1.67-2.51 1.63 0.01 0.04z"/>
+                                    <path class="st5" d="m335.43 35.66-0.01-0.03 0.01 0.03z"/>
+
+                                        </svg>
+                                <div class="addMove">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="42.244" height="44.242"
+                                         viewBox="0 0 42.244 44.242">
+                                        <g id="Group_15369" data-name="Group 15369"
+                                           transform="translate(-1689.653 -741.557)">
+                                            <g id="Group_15368" data-name="Group 15368">
+                                                <path id="Path_16654" data-name="Path 16654"
+                                                      d="M2576.933,2416.594a.844.844,0,0,1-.544-.2,21.345,21.345,0,0,1-2.608-2.616.845.845,0,0,1,1.3-1.085,19.808,19.808,0,0,0,2.4,2.409.845.845,0,0,1-.545,1.49Z"
+                                                      transform="translate(-879.213 -1630.795)" fill="#fc544c"/>
+                                                <path id="Path_16655" data-name="Path 16655"
+                                                      d="M2605.361,2405.871a.845.845,0,0,1-.676-1.352,19.268,19.268,0,0,0,3.87-11.638v-6.759a19.432,19.432,0,0,0-38.864,0v6.759a19.231,19.231,0,0,0,1.986,8.567c.076.155.155.31.236.464l.1.186c.184.341.376.674.578,1a.845.845,0,0,1-1.438.89q-.327-.532-.626-1.083l-.108-.2q-.133-.254-.258-.507a20.911,20.911,0,0,1-2.159-9.313v-6.759a21.122,21.122,0,1,1,42.244,0v6.759a20.949,20.949,0,0,1-4.207,12.651A.845.845,0,0,1,2605.361,2405.871Z"
+                                                      transform="translate(-878.347 -1623.443)" fill="#6c6a6a"/>
+                                            </g>
+                                            <g id="Group_11060" data-name="Group 11060"
+                                               transform="translate(1697.457 749.215)">
+                                                <path id="Path_14768" data-name="Path 14768"
+                                                      d="M2599.295,2382.041a.687.687,0,0,1-.687-.687h0a5.913,5.913,0,0,0-11.825,0,.687.687,0,1,1-1.374.006v-.006a7.289,7.289,0,0,1,14.579,0,.687.687,0,0,1-.687.687Z"
+                                                      transform="translate(-2578.504 -2374.065)" fill="#d8d3ce"
+                                                      stroke="#6c6a6a" stroke-width="1"/>
+                                                <g id="Group_9179" data-name="Group 9179"
+                                                   transform="translate(0 9.224)">
+                                                    <path id="Path_14763" data-name="Path 14763"
+                                                          d="M2602.37,2384.983h-22.521a2.408,2.408,0,0,0-2.392,1.981l0,.021h27.313l0-.021A2.41,2.41,0,0,0,2602.37,2384.983Z"
+                                                          transform="translate(-2577.27 -2384.983)" fill="#a09c9a"/>
+                                                    <path id="Path_14764" data-name="Path 14764"
+                                                          d="M2604.918,2389.9c0-.206-.007-.411-.015-.616h-27.651c-.009.2-.015.41-.015.616a13.556,13.556,0,0,0,.072,1.386h27.541Q2604.918,2390.594,2604.918,2389.9Z"
+                                                          transform="translate(-2577.236 -2385.649)"
+                                                          fill="#a09c9a"/>
+                                                    <path id="Path_14765" data-name="Path 14765"
+                                                          d="M2604.709,2393.17h-27.158a13.789,13.789,0,0,0,.562,2h26.048A13.648,13.648,0,0,0,2604.709,2393.17Z"
+                                                          transform="translate(-2577.285 -2386.253)"
+                                                          fill="#a09c9a"/>
+                                                    <path id="Path_14766" data-name="Path 14766"
+                                                          d="M2579.06,2397.467l.018.033a3.722,3.722,0,0,0,3.312,1.968h17.968a3.719,3.719,0,0,0,3.32-1.98l.01-.021Z"
+                                                          transform="translate(-2577.519 -2386.919)"
+                                                          fill="#a09c9a"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <img src="/static/img/add.png" alt="">
+                                </div>
+                                <img class="pic" src="{{product.product_image.url}}" alt="">
+                                <!--bx-->
+                                <div class="bx">
+                                    <h2>{{product.product_name}}</h2>
+                                    <div class="price">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="175.182" height="26.076"
+                                             viewBox="0 0 175.182 26.076">
+                                            <path id="Path_16657" data-name="Path 16657"
+                                                  d="M2495.033,3151.815H2344.927l-24.369,24.369"
+                                                  transform="translate(-2319.851 -3150.815)" fill="none"
+                                                  stroke="#6c6a6a" stroke-width="2"/>
+                                        </svg>
+                                        <h3><span>SDG</span>{{product.price}} </h3>
+                                    </div>
+                                    <div class="contenu">
+                                        <img src="/static/img/goblack.png" alt="">
+                                         <a href="/cart"><h3>استمرار</h3></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+
+                    </div>
+                </div>
+            </div>
+            <!--service-->
+
+            <!-- add more buttons-->
+
+        </div>
+    </div>
+</section>
+{% endblock %}
